@@ -1,0 +1,2 @@
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.csproj.CoreCompileInputs.cache
