@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
+using Tipsy.Data;
 using Tipsy.WebAPI.Models;
 
 namespace Tipsy.WebAPI.Providers

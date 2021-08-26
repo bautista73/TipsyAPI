@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using Tipsy.WebAPI.Providers;
 using Tipsy.WebAPI.Models;
+using Tipsy.Data;
 
 namespace Tipsy.WebAPI
 {
