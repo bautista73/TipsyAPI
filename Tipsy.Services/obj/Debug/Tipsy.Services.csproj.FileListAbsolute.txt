@@ -4,6 +4,7 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Tipsy.Services.pdb
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\EntityFramework.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\EntityFramework.SqlServer.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.Owin.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.Owin.Security.Cookies.dll
@@ -11,9 +12,16 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.Owin.Security
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.Owin.Security.OAuth.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Newtonsoft.Json.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Owin.dll
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Tipsy.Data.dll
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Tipsy.Models.dll
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Tipsy.Data.pdb
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Tipsy.Data.dll.config
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Tipsy.Models.pdb
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Tipsy.Models.dll.config
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\EntityFramework.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.Owin.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\bin\Debug\Microsoft.Owin.Security.xml
