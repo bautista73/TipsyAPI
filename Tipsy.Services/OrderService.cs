@@ -50,6 +50,7 @@ namespace Tipsy.Services
                                 {
                                     OrderId = e.OrderId,
                                     UserFullName = e.UserFullName,
+                                    UserId = e.UserId,
                                     CreatedUtc = e.CreatedUtc
                                 }
                                 );
