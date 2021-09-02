@@ -11,15 +11,13 @@ namespace Tipsy.Models
     {
         public int OrderId { get; set; }
         public Guid UserId { get; set; }
-        public string UserFullName { get; set; }
-        public int DrinkId { get; set; }
-        public string DrinkName { get; set; }
-        public decimal OrderSubTotal { get; set; }
-        public decimal OrderTax { get; set; }
-        public decimal OrderTotal { get; set; }
+        // Add a list of drinks
+        public int Quantity { get; set; }
+        public int CustomerId { get; set; }
+        public int PaymentId { get; set; }
         public bool IsComplete { get; set; }
         public string OrderNotes { get; set; }
         [Display(Name="CreatedOnDate")]
-        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset OrderUtc { get; set; }
     }
 }

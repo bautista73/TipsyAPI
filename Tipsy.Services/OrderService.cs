@@ -26,7 +26,7 @@ namespace Tipsy.Services
                     UserId = _userId,
                     IsComplete = model.IsComplete,
                     OrderNotes = model.OrderNotes,
-                    CreatedUtc = DateTimeOffset.Now
+                    OrderUtc = DateTimeOffset.Now
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -49,9 +49,8 @@ namespace Tipsy.Services
                                 new OrderListItem
                                 {
                                     OrderId = e.OrderId,
-                                    UserFullName = e.UserFullName,
                                     UserId = e.UserId,
-                                    CreatedUtc = e.CreatedUtc
+                                    OrderUtc = e.OrderUtc
                                 }
                                 );
                 return query.ToArray();

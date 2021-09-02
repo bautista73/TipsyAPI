@@ -11,7 +11,11 @@ namespace Tipsy.Models
     {
         [Required]
         public bool IsComplete { get; set; }
+        [Required]
+        public int Quantity { get; set; }
         [MaxLength(250)]
         public string OrderNotes { get; set; }
+        [Required]
+        public DateTimeOffset OrderUtc { get; set; }
     }
 }
