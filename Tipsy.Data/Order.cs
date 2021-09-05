@@ -22,8 +22,6 @@ namespace Tipsy.Data
         [Required]
         public decimal OrderSubTotal { get; set; }
         [Required]
-        public decimal OrderTax { get; set; }
-        [Required]
         public decimal OrderTotal { get; set; }
         [Required]
         public bool IsComplete { get; set; }
