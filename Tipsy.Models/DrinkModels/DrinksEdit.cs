@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Tipsy.Models.DrinkModels
 {
-    class DrinksEdit
+    public class DrinksEdit
     {
+        public int DrinkId { get; set; }
+        public string DrinkName { get; set; }
+        public decimal Price { get; set; }
+        public List<string> Ingredients { get; set; }
     }
 }

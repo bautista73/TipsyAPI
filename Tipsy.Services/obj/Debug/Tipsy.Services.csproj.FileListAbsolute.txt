@@ -25,3 +25,7 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.csproj.C
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.csproj.CopyComplete
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.pdb
+C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.dll
+C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Services\obj\Debug\Tipsy.Services.pdb

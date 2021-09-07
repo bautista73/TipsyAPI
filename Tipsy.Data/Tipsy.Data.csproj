@@ -81,6 +81,7 @@
     <Compile Include="Drinks.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,13 +7,20 @@ using System.Threading.Tasks;
 
 namespace Tipsy.Data
 {
-    class Drinks
+    public class Drinks
     {
         [Key]
         public int DrinkId { get; set; }
+        [Required]
+        public Guid OwnerId { get; set; }
+        [Required]
         public string DrinkName { get; set; }
+        [Required]
         public decimal Price { get; set; }
-        public int Quantity { get; set; }
-        public List<T> Ingredients { get; set; }
+        [Required]
+        public List<string> Ingredients { get; set; }
+        [Required]
+        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }
