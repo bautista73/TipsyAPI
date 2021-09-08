@@ -14,11 +14,16 @@ namespace Tipsy.Data
         [Required]
         public int OrderId { get; set; }
         [Required]
+        public Guid UserId { get; set; }
+        [Required]
         public DateTime PaymentDate { get; set; }
         [Required]
         public decimal Amount { get; set; }
         [Required]
         public PayType PaymentType { get; set; }
+        [Required]
+        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 
     public enum PayType { Cash, Credit, Debit }

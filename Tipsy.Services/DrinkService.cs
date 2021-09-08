@@ -22,7 +22,7 @@ namespace Tipsy.Services
             var entity =
                 new Drinks()
                 {
-                    OwnerId = _userId,
+                    UserId = _userId,
                     DrinkName = model.DrinkName,
                     Price = model.Price,
                     Ingredients = model.Ingredients
@@ -41,7 +41,7 @@ namespace Tipsy.Services
                 var query =
                     ctx
                         .Drink
-                        .Where(e => e.OwnerId == _userId)
+                        .Where(e => e.UserId == _userId)
                         .Select(
                             e =>
                                 new DrinksListItem
@@ -62,7 +62,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == id && e.OwnerId == _userId);
+                        .Single(e => e.DrinkId == id && e.UserId == _userId);
                 return
                     new DrinksDetail
                     {
@@ -82,7 +82,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == model.DrinkId && e.OwnerId == _userId);
+                        .Single(e => e.DrinkId == model.DrinkId && e.UserId == _userId);
                 entity.DrinkName = model.DrinkName;
                 entity.Price = model.Price;
                 entity.Ingredients = model.Ingredients;
@@ -99,7 +99,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == drinkId && e.OwnerId == _userId);
+                        .Single(e => e.DrinkId == drinkId && e.UserId == _userId);
 
                 ctx.Drink.Remove(entity);
 

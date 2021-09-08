@@ -8,7 +8,7 @@ using Tipsy.Data;
 
 namespace Tipsy.Models.PaymentModels
 {
-    class PaymentDetail
+    public class PaymentDetail
     {
         [Key]
         public int PaymentId { get; set; }
@@ -16,5 +16,7 @@ namespace Tipsy.Models.PaymentModels
         public DateTime PaymentDate { get; set; }
         public decimal Amount { get; set; }
         public PayType PaymentType { get; set; }
+        public DateTimeOffset CreatedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }

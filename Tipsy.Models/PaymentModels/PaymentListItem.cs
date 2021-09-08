@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tipsy.Models.PaymentModels
 {
-    class PaymentListItem
+    public class PaymentListItem
     {
         public int PaymentId { get; set; }
         public int  OrderId { get; set; }

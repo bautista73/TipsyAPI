@@ -12,7 +12,7 @@ namespace Tipsy.Data
         [Key]
         public int DrinkId { get; set; }
         [Required]
-        public Guid OwnerId { get; set; }
+        public Guid UserId { get; set; }
         [Required]
         public string DrinkName { get; set; }
         [Required]

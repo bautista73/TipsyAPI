@@ -7,7 +7,7 @@ using Tipsy.Data;
 
 namespace Tipsy.Models.PaymentModels
 {
-    class PaymentEdit
+    public class PaymentEdit
     {
         public int PaymentId { get; set; }
         public decimal Amount { get; set; }
