@@ -9,7 +9,7 @@ using Tipsy.Data;
 
 namespace Tipsy.Services
 {
-    class PaymentService
+    public class PaymentService
     {
         private readonly Guid _userId;
 

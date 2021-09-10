@@ -8,7 +8,7 @@ using Tipsy.Models.DrinkModels;
 
 namespace Tipsy.Services
 {
-    class DrinkService
+    public class DrinkService
     {
         private readonly Guid _userId;
 
