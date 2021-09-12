@@ -75,7 +75,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserListItem.cs" />
+    <Compile Include="UserEdit.cs" />
+    <Compile Include="UserDetail.cs" />
+    <Compile Include="UserCreate.cs" />
     <Compile Include="OrderCreate.cs" />
+    <Compile Include="OrderDetail.cs" />
+    <Compile Include="OrderEdit.cs" />
     <Compile Include="OrderListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

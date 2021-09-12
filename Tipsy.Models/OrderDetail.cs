@@ -7,17 +7,14 @@ using System.Threading.Tasks;
 
 namespace Tipsy.Models
 {
-    public class OrderListItem
+    public class OrderDetail
     {
         public int OrderId { get; set; }
-        public Guid UserId { get; set; }
-        // Add a list of drinks
-        public int Quantity { get; set; }
-        public int CustomerId { get; set; }
-        public int PaymentId { get; set; }
-        public bool IsComplete { get; set; }
-        public string OrderNotes { get; set; }
-        [Display(Name="CreatedOnDate")]
+        [Display(Name="Created")]
         public DateTimeOffset OrderUtc { get; set; }
+        public Guid UserId { get; set; }
+        public int Quantity { get; set; }
+        public List Drinks { get; set; }
+        public int PaymentId { get; set; }
     }
 }

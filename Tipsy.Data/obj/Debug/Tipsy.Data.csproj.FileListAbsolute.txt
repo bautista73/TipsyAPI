@@ -29,3 +29,4 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.csproj.CoreCompi
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.pdb
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.Migrations.UserMigration.resources

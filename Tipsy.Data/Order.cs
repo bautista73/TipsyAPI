@@ -13,24 +13,18 @@ namespace Tipsy.Data
         public int OrderId { get; set; }
         [Required]
         public Guid UserId { get; set; }
+        // Add a list of drinks
         [Required]
-        public string UserFullName { get; set; }
+        public int Quantity { get; set; }
         [Required]
-        public int DrinkId { get; set; }
+        public int CustomerId { get; set; }
         [Required]
-        public string DrinkName { get; set; }
-        [Required]
-        public decimal OrderSubTotal { get; set; }
-        [Required]
-        public decimal OrderTax { get; set; }
-        [Required]
-        public decimal OrderTotal { get; set; }
+        public int PaymentId { get; set; }
         [Required]
         public bool IsComplete { get; set; }
         [Required]
         public string OrderNotes { get; set; }
         [Required]
-        public DateTimeOffset CreatedUtc { get; set; }
-        public DateTimeOffset? ModifiedUtc { get; set; }
+        public DateTimeOffset OrderUtc { get; set; }
     }
 }
