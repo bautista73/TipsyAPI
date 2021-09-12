@@ -11,23 +11,23 @@ using Tipsy.Services;
 namespace Tipsy.WebAPI.Controllers
 {
     [Authorize]
-    public class OrderController : ApiController
+    public class UserController : ApiController
     {
-        private OrderService CreateOrderService()
+        private UserService CreateUserService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
-            var orderService = new OrderService(userId);
-            return orderService;
+            var userService = new UserService(userId);
+            return userService;
         }
 
-        public IHttpActionResult Post(OrderCreate order)
+        public IHttpActionResult Post(UserCreate user)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreateOrderService();
+            var service = CreateUserService();
 
-            if (!service.CreateOrder(order))
+            if (!service.CreateUser(user))
                 return InternalServerError();
 
             return Ok();
@@ -35,33 +35,33 @@ namespace Tipsy.WebAPI.Controllers
 
         public IHttpActionResult Get()
         {
-            OrderService orderService = CreateOrderService();
-            var orders = orderService.GetOrders();
-            return Ok(orders);
+            UserService userService = CreateUserService();
+            var users = userService.GetUsers();
+            return Ok(users);
         }
 
         public IHttpActionResult Get(int id)
         {
-            OrderService orderService = CreateOrderService();
-            var order = orderService.GetOrdersById(id);
-            return Ok(order);
+            UserService userService = CreateUserService();
+            var user = userService.GetUsersById(id);
+            return Ok(user);
         }
 
-        public IHttpActionResult Put(OrderEdit order)
+        public IHttpActionResult Put(UserEdit user)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var service = CreateOrderService();
-            if (!service.UpdateOrder(order))
+            var service = CreateUserService();
+            if (!service.UpdateUser(user))
                 return InternalServerError();
             return Ok();
         }
 
         public IHttpActionResult Delete(int id)
         {
-            var service = CreateOrderService();
+            var service = CreateUserService();
 
-            if (!service.DeleteOrder(id))
+            if (!service.DeleteUser(id))
                 return InternalServerError();
 
             return Ok();

@@ -4,27 +4,17 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tipsy.Data;
 
-namespace Tipsy.Data
+namespace Tipsy.Models
 {
-    public enum UserStatus
+    public class UserDetail
     {
-        Working,
-        Off,
-        Break
-    }
-    public class User
-    {
-        [Key]
-        public int UserId { get; set; }
-        [Required]
+        public Guid UserId { get; set; }
         public string FirstName { get; set; }
-        [Required]
         public string LastName { get; set; }
-        [Required]
         public string Password { get; set; }
         public UserStatus Status { get; set; }
-        [Required]
         public int MenuId { get; set; }
     }
 }
