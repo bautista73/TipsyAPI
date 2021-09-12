@@ -123,7 +123,3 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.CodeDom.Providers.Dot
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.csproj.CopyComplete
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.pdb
-C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.csproj.AssemblyReference.cache
-C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.csproj.CoreCompileInputs.cache
-C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.dll
-C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.WebAPI\obj\Debug\Tipsy.WebAPI.pdb
