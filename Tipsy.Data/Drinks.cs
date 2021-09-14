@@ -24,3 +24,4 @@ namespace Tipsy.Data
         public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }
+//I'm a dev, bruh
