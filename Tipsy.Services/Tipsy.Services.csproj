@@ -80,7 +80,7 @@
   <ItemGroup>
     <Compile Include="DrinkService.cs" />
     <Compile Include="OrderService.cs" />
-    <Compile Include="PaymentController.cs" />
+    <Compile Include="PaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
