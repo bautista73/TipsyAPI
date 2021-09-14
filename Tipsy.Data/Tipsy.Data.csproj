@@ -78,6 +78,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drinks.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202108281636467_Initial.cs" />
     <Compile Include="Migrations\202108281636467_Initial.designer.cs">
@@ -85,6 +86,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

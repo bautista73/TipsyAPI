@@ -7,20 +7,24 @@ using System.Threading.Tasks;
 
 namespace Tipsy.Data
 {
-    public class Drinks
+    public class Payment
     {
         [Key]
-        public int DrinkId { get; set; }
+        public int PaymentId { get; set; }
+        [Required]
+        public int OrderId { get; set; }
         [Required]
         public Guid UserId { get; set; }
         [Required]
-        public string DrinkName { get; set; }
+        public DateTime PaymentDate { get; set; }
         [Required]
-        public decimal Price { get; set; }
+        public decimal Amount { get; set; }
         [Required]
-        public List<string> Ingredients { get; set; }
+        public PayType PaymentType { get; set; }
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
     }
+
+    public enum PayType { Cash, Credit, Debit }
 }

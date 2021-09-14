@@ -83,9 +83,10 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Tipsy.Data\Tipsy.Data.csproj">
-      <Project>{21d06d65-033f-4a2d-bd13-e8f4ed778d89}</Project>
+      <Project>{21D06D65-033F-4A2D-BD13-E8F4ED778D89}</Project>
       <Name>Tipsy.Data</Name>
     </ProjectReference>
   </ItemGroup>
