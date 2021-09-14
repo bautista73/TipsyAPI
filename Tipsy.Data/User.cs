@@ -24,7 +24,5 @@ namespace Tipsy.Data
         [Required]
         public string Password { get; set; }
         public UserStatus Status { get; set; }
-        [Required]
-        public int MenuId { get; set; }
     }
 }

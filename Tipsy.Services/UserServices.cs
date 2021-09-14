@@ -28,7 +28,6 @@ namespace Tipsy.Services
                     LastName = model.LastName,
                     Password = model.Password,
                     Status = model.Status,
-                    MenuId = model.MenuId
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -44,7 +43,7 @@ namespace Tipsy.Services
             {
                 var query =
                     ctx
-                        .User
+                        .Users
                         .Where(e => e.UserId == _userId)
                         .Select(
                             e =>
@@ -54,15 +53,14 @@ namespace Tipsy.Services
                                     FirstName = e.FirstName,
                                     LastName = e.LastName,
                                     Password = e.Password,
-                                    Status = e.Status,
-                                    MenuId = e.MenuId
+                                    Status = e.Status
                                 }
                                 );
                 return query.ToArray();
             }
         }
 
-        public UserDetail GetUserById(int id)
+        public UserDetail GetUserById(Guid id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -77,8 +75,7 @@ namespace Tipsy.Services
                         FirstName = entity.FirstName,
                         LastName = entity.LastName,
                         Password = entity.Password,
-                        Status = entity.Status,
-                        MenuId = entity.MenuId
+                        Status = entity.Status
                     };
             }
         }
@@ -101,7 +98,7 @@ namespace Tipsy.Services
             }
         }
 
-        public bool DeleteUser(int userId)
+        public bool DeleteUser(Guid userId)
         {
             using (var ctx = new ApplicationDbContext())
             {

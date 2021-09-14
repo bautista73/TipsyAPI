@@ -17,6 +17,5 @@ namespace Tipsy.Models
         [Required]
         public string Password { get; set; }
         public UserStatus Status { get; set; }
-        public int MenuId { get; set; }
     }
 }
