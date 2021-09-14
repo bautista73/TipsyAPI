@@ -26,7 +26,7 @@ namespace Tipsy.Services
                     UserId = _userId,
                     IsComplete = model.IsComplete,
                     OrderNotes = model.OrderNotes,
-                    OrderUtc = DateTimeOffset.Now
+                    CreatedUtc = DateTimeOffset.Now
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -49,63 +49,12 @@ namespace Tipsy.Services
                                 new OrderListItem
                                 {
                                     OrderId = e.OrderId,
+                                    UserFullName = e.UserFullName,
                                     UserId = e.UserId,
-                                    OrderUtc = e.OrderUtc
+                                    CreatedUtc = e.CreatedUtc
                                 }
                                 );
                 return query.ToArray();
-            }
-        }
-
-        public OrderDetail GetOrderById(int id)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .Orders
-                        .Single(e => e.OrderId == id && e.UserId == _userId);
-                return
-                    new OrderDetail
-                    {
-                        OrderId = entity.OrderId,
-                        UserId = entity.UserId,
-                        OrderUtc = entity.OrderUtc,
-                        Quantity = entity.Quantity,
-                        PaymentId = entity.PaymentId,
-                        Drinks = entity.Drinks
-                    };
-            }
-        }
-
-        public bool UpdateOrder(OrderEdit model)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .Orders
-                        .Single(e => e.OrderId == model.OrderId && e.UserId == _userId);
-
-                entity.Quantity = model.Quantity;
-                entity.Drinks = model.Drinks;
-
-                return ctx.SaveChanges() == 1;
-            }
-        }
-
-        public bool DeleteOrder(int orderId)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .Orders
-                        .Single(e => e.OrderId == orderId && e.UserId == _userId);
-
-                ctx.Orders.Remove(entity);
-
-                return ctx.SaveChanges() == 1;
             }
         }
     }

@@ -39,32 +39,5 @@ namespace Tipsy.WebAPI.Controllers
             var orders = orderService.GetOrders();
             return Ok(orders);
         }
-
-        public IHttpActionResult Get(int id)
-        {
-            OrderService orderService = CreateOrderService();
-            var order = orderService.GetOrdersById(id);
-            return Ok(order);
-        }
-
-        public IHttpActionResult Put(OrderEdit order)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-            var service = CreateOrderService();
-            if (!service.UpdateOrder(order))
-                return InternalServerError();
-            return Ok();
-        }
-
-        public IHttpActionResult Delete(int id)
-        {
-            var service = CreateOrderService();
-
-            if (!service.DeleteOrder(id))
-                return InternalServerError();
-
-            return Ok();
-        }
     }
 }
