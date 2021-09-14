@@ -10,8 +10,12 @@ namespace Tipsy.Models
     public class OrderCreate
     {
         [Required]
-        public bool IsComplete { get; set; }
-        [MaxLength(250)]
-        public string OrderNotes { get; set; }
+        public int OrderId { get; set; }
+        [Required]
+        public int Quantity { get; set; }
+        [Required]
+        public List<string> Drinks { get; set; }
+        [Required]
+        public int PaymentId { get; set; }
     }
 }

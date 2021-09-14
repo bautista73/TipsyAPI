@@ -24,9 +24,10 @@ namespace Tipsy.Services
                 new Order()
                 {
                     UserId = _userId,
-                    IsComplete = model.IsComplete,
-                    OrderNotes = model.OrderNotes,
-                    OrderUtc = DateTimeOffset.Now
+                    Quantity = model.Quantity,
+                    Drinks = model.Drinks,
+                    OrderUtc = DateTimeOffset.Now,
+                    PaymentId = model.PaymentId
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -50,7 +51,10 @@ namespace Tipsy.Services
                                 {
                                     OrderId = e.OrderId,
                                     UserId = e.UserId,
-                                    OrderUtc = e.OrderUtc
+                                    OrderUtc = e.OrderUtc,
+                                    Quantity = e.Quantity,
+                                    Drinks = e.Drinks,
+                                    PaymentId = e.PaymentId
                                 }
                                 );
                 return query.ToArray();
@@ -89,6 +93,7 @@ namespace Tipsy.Services
 
                 entity.Quantity = model.Quantity;
                 entity.Drinks = model.Drinks;
+                entity.OrderId = model.OrderId;
 
                 return ctx.SaveChanges() == 1;
             }

@@ -16,7 +16,7 @@ namespace Tipsy.Data
     public class User
     {
         [Key]
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
