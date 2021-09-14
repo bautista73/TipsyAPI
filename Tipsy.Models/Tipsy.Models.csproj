@@ -75,6 +75,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrinksModels\DrinksCreate.cs" />
+    <Compile Include="DrinksModels\DrinksDetail.cs" />
+    <Compile Include="DrinksModels\DrinksEdit.cs" />
+    <Compile Include="DrinksModels\DrinksListItem.cs" />
     <Compile Include="OrderCreate.cs" />
     <Compile Include="OrderListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,7 +87,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="PaymentModels\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tipsy.Data\Tipsy.Data.csproj">
       <Project>{21D06D65-033F-4A2D-BD13-E8F4ED778D89}</Project>
