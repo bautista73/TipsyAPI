@@ -76,7 +76,6 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.CodeDom.Providers.Dot
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.xml
-C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.Cookies.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.Facebook.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.Google.xml
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
