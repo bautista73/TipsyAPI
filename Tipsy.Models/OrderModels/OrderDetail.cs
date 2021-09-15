@@ -14,6 +14,6 @@ namespace Tipsy.Models
         public DateTimeOffset OrderUtc { get; set; }
         public Guid UserId { get; set; }
         public int Quantity { get; set; }
-        public List<string> Drinks { get; set; }
+        public int DrinkId { get; set; }
     }
 }

@@ -25,7 +25,7 @@ namespace Tipsy.Services
                 {
                     UserId = _userId,
                     Quantity = model.Quantity,
-                    Drinks = model.Drinks,
+                    DrinkId = model.DrinkId,
                     OrderUtc = DateTimeOffset.Now
                 };
             using (var ctx = new ApplicationDbContext())
@@ -52,7 +52,7 @@ namespace Tipsy.Services
                                     UserId = e.UserId,
                                     OrderUtc = e.OrderUtc,
                                     Quantity = e.Quantity,
-                                    Drinks = e.Drinks
+                                    DrinkId = e.DrinkId
                                 }
                                 );
                 return query.ToArray();
@@ -74,7 +74,7 @@ namespace Tipsy.Services
                         UserId = entity.UserId,
                         OrderUtc = entity.OrderUtc,
                         Quantity = entity.Quantity,
-                        Drinks = entity.Drinks
+                        DrinkId = entity.DrinkId
                     };
             }
         }
@@ -89,7 +89,7 @@ namespace Tipsy.Services
                         .Single(e => e.OrderId == model.OrderId && e.UserId == _userId);
 
                 entity.Quantity = model.Quantity;
-                entity.Drinks = model.Drinks;
+                entity.DrinkId = model.DrinkId;
                 entity.OrderId = model.OrderId;
 
                 return ctx.SaveChanges() == 1;
