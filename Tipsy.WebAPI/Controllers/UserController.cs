@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using Tipsy.Models;
+using Tipsy.Services;
 using AuthorizeAttribute = System.Web.Http.AuthorizeAttribute;
 
 namespace Tipsy.WebAPI.Controllers
@@ -40,10 +41,10 @@ namespace Tipsy.WebAPI.Controllers
             return Ok(users);
         }
 
-        public IHttpActionResult Get(int id)
+        public IHttpActionResult Get(Guid id)
         {
             UserService userService = CreateUserService();
-            var user = userService.GetUsersById(id);
+            var user = userService.GetUserById(id);
             return Ok(user);
         }
 
@@ -57,7 +58,7 @@ namespace Tipsy.WebAPI.Controllers
             return Ok();
         }
 
-        public IHttpActionResult Delete(int id)
+        public IHttpActionResult Delete(Guid id)
         {
             var service = CreateUserService();
 

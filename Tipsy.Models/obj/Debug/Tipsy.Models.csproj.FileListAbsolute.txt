@@ -25,3 +25,8 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\obj\Debug\Tipsy.Models.csproj.CoreC
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\obj\Debug\Tipsy.Models.csproj.CopyComplete
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\obj\Debug\Tipsy.Models.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\obj\Debug\Tipsy.Models.pdb
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\bin\Debug\Tipsy.Data.dll
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\bin\Debug\Tipsy.Data.pdb
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\bin\Debug\Tipsy.Data.dll.config
+C:\ElevenFiftyProjects\TipsyAPI\Tipsy.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

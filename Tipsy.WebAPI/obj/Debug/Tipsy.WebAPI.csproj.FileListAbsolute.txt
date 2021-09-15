@@ -40,7 +40,6 @@ C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.AspNet.Identity.Owin.
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.Cookies.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.Facebook.dll
 C:\ElevenFiftyProjects\TipsyAPI\Tipsy.WebAPI\bin\Microsoft.Owin.Security.Google.dll
