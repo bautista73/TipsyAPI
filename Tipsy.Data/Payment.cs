@@ -12,8 +12,6 @@ namespace Tipsy.Data
         [Key]
         public int PaymentId { get; set; }
         [Required]
-        public Guid UserId { get; set; }
-        [Required]
         public DateTime PaymentDate { get; set; }
         [Required]
         public decimal Amount { get; set; }
@@ -22,6 +20,10 @@ namespace Tipsy.Data
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        [Required]
+        public Guid UserId { get; set; }
+        public ICollection<User> Users { get; set; }
 
         [Required]
         public int OrderId { get; set; }
