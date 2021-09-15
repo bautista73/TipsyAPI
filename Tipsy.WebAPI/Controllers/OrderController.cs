@@ -43,7 +43,7 @@ namespace Tipsy.WebAPI.Controllers
         public IHttpActionResult Get(int id)
         {
             OrderService orderService = CreateOrderService();
-            var order = orderService.GetOrdersById(id);
+            var order = orderService.GetOrderById(id);
             return Ok(order);
         }
 

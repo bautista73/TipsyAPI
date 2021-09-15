@@ -20,7 +20,6 @@ namespace Tipsy.Data
         public List<string> Drinks { get; set; }
         [Required]
         public DateTimeOffset OrderUtc { get; set; }
-        public int PaymentId { get; set; }
 
         public int DrinkId { get; set; }
         public Drinks Dranks { get; set; }

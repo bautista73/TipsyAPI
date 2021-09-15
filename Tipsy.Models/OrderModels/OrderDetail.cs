@@ -15,6 +15,5 @@ namespace Tipsy.Models
         public Guid UserId { get; set; }
         public int Quantity { get; set; }
         public List<string> Drinks { get; set; }
-        public int PaymentId { get; set; }
     }
 }
