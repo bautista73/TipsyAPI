@@ -10,9 +10,9 @@ namespace Tipsy.Services
 {
     public class DrinkService
     {
-        private readonly Guid _userId;
+        private readonly int _userId;
 
-        public DrinkService(Guid userId)
+        public DrinkService(int userId)
         {
             _userId = userId;
         }
@@ -22,7 +22,7 @@ namespace Tipsy.Services
             var entity =
                 new Drinks()
                 {
-                    UserId = _userId,
+                    DrinkId = _userId,
                     DrinkName = model.DrinkName,
                     Price = model.Price,
                     Ingredients = model.Ingredients
@@ -41,7 +41,7 @@ namespace Tipsy.Services
                 var query =
                     ctx
                         .Drink
-                        .Where(e => e.UserId == _userId)
+                        .Where(e => e.DrinkId == _userId)
                         .Select(
                             e =>
                                 new DrinksListItem
@@ -62,7 +62,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == id && e.UserId == _userId);
+                        .Single(e => e.DrinkId == id && e.DrinkId == _userId);
                 return
                     new DrinksDetail
                     {
@@ -82,7 +82,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == model.DrinkId && e.UserId == _userId);
+                        .Single(e => e.DrinkId == model.DrinkId && e.DrinkId == _userId);
                 entity.DrinkName = model.DrinkName;
                 entity.Price = model.Price;
                 entity.Ingredients = model.Ingredients;
@@ -99,7 +99,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == drinkId && e.UserId == _userId);
+                        .Single(e => e.DrinkId == drinkId && e.DrinkId == _userId);
 
                 ctx.Drink.Remove(entity);
 

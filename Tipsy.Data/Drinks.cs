@@ -12,8 +12,6 @@ namespace Tipsy.Data
         [Key]
         public int DrinkId { get; set; }
         [Required]
-        public Guid UserId { get; set; }
-        [Required]
         public string DrinkName { get; set; }
         [Required]
         public decimal Price { get; set; }
@@ -25,5 +23,3 @@ namespace Tipsy.Data
     }
 }
 
-//This is a test
-//I'm a dev, bruh

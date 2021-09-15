@@ -16,3 +16,4 @@ namespace Tipsy.Models.PaymentModels
         public DateTimeOffset CreatedUtc { get; set; }
     }
 }
+

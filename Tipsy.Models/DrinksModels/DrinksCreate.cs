@@ -19,6 +19,5 @@ namespace Tipsy.Models.DrinkModels
 
         [Required]
         public List<string> Ingredients { get; set; }
-
     }
 }

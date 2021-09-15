@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,5 +21,8 @@ namespace Tipsy.Data
         [Required]
         public DateTimeOffset OrderUtc { get; set; }
         public int PaymentId { get; set; }
+
+        public int DrinkId { get; set; }
+        public Drinks Dranks { get; set; }
     }
 }
