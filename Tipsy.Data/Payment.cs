@@ -12,8 +12,6 @@ namespace Tipsy.Data
         [Key]
         public int PaymentId { get; set; }
         [Required]
-        public int OrderId { get; set; }
-        [Required]
         public Guid UserId { get; set; }
         [Required]
         public DateTime PaymentDate { get; set; }
@@ -24,6 +22,10 @@ namespace Tipsy.Data
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
+
+        [Required]
+        public int OrderId { get; set; }
+        public Order Orders { get; set; }
     }
 
     public enum PayType { Cash, Credit, Debit }
