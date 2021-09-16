@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tipsy.Data;
 
 namespace Tipsy.Models
 {
@@ -13,8 +14,6 @@ namespace Tipsy.Models
         public int OrderId { get; set; }
         [Required]
         public int Quantity { get; set; }
-        [Required]
         public int DrinkId { get; set; }
-
     }
 }

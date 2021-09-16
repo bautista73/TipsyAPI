@@ -21,12 +21,5 @@ namespace Tipsy.Data
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
-
-        //Foreign key
-        [Display(Name = "Order")]
-        public virtual int OrderId { get; set; }
-
-        [ForeignKey("OrderId")]
-        public virtual Order Order { get; set; }
     }
 }

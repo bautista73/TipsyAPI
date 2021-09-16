@@ -14,7 +14,7 @@ namespace Tipsy.Data
         [Required]
         public DateTime PaymentDate { get; set; }
         [Required]
-        public decimal Amount { get; set; }
+        public float Amount { get; set; }
         [Required]
         public PayType PaymentType { get; set; }
         [Required]

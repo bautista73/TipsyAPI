@@ -21,8 +21,7 @@ namespace Tipsy.Data
         [Required]
         public ICollection<User> Users { get; set; }
 
-        [Required]
-        public virtual Drinks Drink { get; set; }
-
+        [Display(Name = "Drinks")]
+        public virtual int DrinkId { get; set; }
     }
 }
