@@ -22,7 +22,6 @@ namespace Tipsy.Data
         public DateTimeOffset? ModifiedUtc { get; set; }
 
         [Required]
-        public Guid UserId { get; set; }
         public ICollection<User> Users { get; set; }
 
         [Required]
