@@ -25,7 +25,6 @@ namespace Tipsy.Data
         public ICollection<User> Users { get; set; }
 
         [Required]
-        public int OrderId { get; set; }
         public Order Orders { get; set; }
     }
 

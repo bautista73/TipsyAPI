@@ -14,15 +14,15 @@ namespace Tipsy.Data
         public int OrderId { get; set; }
         [Required]
         public int Quantity { get; set; }
-        [Required]
-        public List<string> Drinks { get; set; }
+        
         [Required]
         public DateTimeOffset OrderUtc { get; set; }
 
         [Required]
         public ICollection<User> Users { get; set; }
 
-        public int DrinkId { get; set; }
-        public Drinks Dranks { get; set; }
+        [Required]
+        public virtual Drinks Drink { get; set; }
+
     }
 }
