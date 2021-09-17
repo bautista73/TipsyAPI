@@ -61,3 +61,4 @@ C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.c
 C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.dll
 C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.pdb
 C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.Migrations.migration2.resources
+C:\ElevenFiftyProjects\DotNetProjects\TipsyAPI\Tipsy.Data\obj\Debug\Tipsy.Data.Migrations.Migration3.resources
