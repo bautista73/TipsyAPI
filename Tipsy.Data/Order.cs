@@ -11,14 +11,17 @@ namespace Tipsy.Data
     public class Order
     {
         [Key]
-        public int OrderId { get; set; }
+        public Guid OrderId { get; set; }
         [Required]
-        public int Quantity { get; set; }
-        
+        public Guid UserId { get; set; }
+        [Required]
+        public int Quantity { get; set; }       
         [Required]
         public DateTimeOffset OrderUtc { get; set; }
 
-        [Display(Name = "Drinks")]
-        public virtual int DrinkId { get; set; }
+        [ForeignKey(nameof(Drinks))]
+        public int DrinkId { get; set; }
+        public virtual Drinks Drinks { get; set; }
+
     }
 }
