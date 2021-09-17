@@ -20,12 +20,6 @@ namespace Tipsy.Data
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
-
-        [Required]
-        public ICollection<User> Users { get; set; }
-
-        [Required]
-        public Order Orders { get; set; }
     }
 
     public enum PayType { Cash, Credit, Debit }

@@ -18,9 +18,6 @@ namespace Tipsy.Data
         [Required]
         public DateTimeOffset OrderUtc { get; set; }
 
-        [Required]
-        public ICollection<User> Users { get; set; }
-
         [Display(Name = "Drinks")]
         public virtual int DrinkId { get; set; }
     }
