@@ -26,6 +26,7 @@ namespace Tipsy.Data
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+
         }
         
         public static ApplicationDbContext Create()
@@ -34,7 +35,6 @@ namespace Tipsy.Data
         }
 
         public DbSet<Order> Orders { get; set; }
-        public DbSet<User> Users { get; set; }
 
         public DbSet<Drinks> Drink { get; set; }
 
