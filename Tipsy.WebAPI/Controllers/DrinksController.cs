@@ -16,7 +16,7 @@ namespace Tipsy.WebAPI.Controllers
     {
         private DrinkService CreateDrinkService()
         {
-            var drinkId = int.Parse(User.Identity.GetUserId());
+            var drinkId = Guid.Parse(User.Identity.GetUserId());
             var drinkService = new DrinkService(drinkId);
             return drinkService;
         }
