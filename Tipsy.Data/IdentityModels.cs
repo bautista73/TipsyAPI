@@ -39,6 +39,7 @@ namespace Tipsy.Data
         public DbSet<Drinks> Drink { get; set; }
 
         public DbSet<Payment> Payments { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
