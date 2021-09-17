@@ -15,9 +15,7 @@ namespace Tipsy.Models.DrinkModels
         public string DrinkName { get; set; }
 
         [Required]
-        public decimal Price { get; set; }
+        public float Price { get; set; }
 
-        [Required]
-        public List<string> Ingredients { get; set; }
     }
 }

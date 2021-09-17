@@ -28,5 +28,5 @@ namespace Tipsy.Data
         public virtual Order Order { get; set; }
     }
 
-    public enum PayType { Cash, Credit, Debit }
+    public enum PayType { Cash = 1, Credit, Debit }
 }

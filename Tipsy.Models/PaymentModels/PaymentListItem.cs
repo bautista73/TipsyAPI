@@ -9,9 +9,22 @@ namespace Tipsy.Models.PaymentModels
 {
     public class PaymentListItem
     {
+        [Required]
         public int PaymentId { get; set; }
-        public int OrderId { get; set; }
 
+        [Required]
+        public Guid UserId { get; set; }
+
+        [Required]
+        public float Amount { get; set; }
+
+        [Required]
+        public DateTime PaymentDate { get; set; }
+
+        [Required]
+        public Guid OrderId { get; set; }
+
+        [Required]
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
     }

@@ -10,12 +10,17 @@ namespace Tipsy.Models.PaymentModels
 {
     public class PaymentDetail
     {
-        [Key]
+        [Required]
         public int PaymentId { get; set; }
-        public int OrderId { get; set; }
+        [Required]
+        public Guid OrderId { get; set; }
+        [Required]
         public DateTime PaymentDate { get; set; }
-        public decimal Amount { get; set; }
+        [Required]
+        public float Amount { get; set; }
+        [Required]
         public PayType PaymentType { get; set; }
+        [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
     }

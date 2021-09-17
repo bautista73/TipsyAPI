@@ -8,8 +8,8 @@ namespace Tipsy.Models
 {
     public class OrderEdit
     {
+        public Guid OrderId { get; set; }
         public int Quantity { get; set; }
         public int DrinkId { get; set; }
-        public int OrderId { get; set; }
     }
 }

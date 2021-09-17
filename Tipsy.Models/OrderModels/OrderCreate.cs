@@ -9,10 +9,8 @@ using Tipsy.Data;
 namespace Tipsy.Models
 {
     public class OrderCreate
-    {
-        [Required]
-        public int OrderId { get; set; }
-        [Required]
+    { 
+        [MaxLength(100)]
         public int Quantity { get; set; }
         public int DrinkId { get; set; }
     }

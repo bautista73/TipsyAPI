@@ -9,7 +9,7 @@ namespace Tipsy.Models
 {
     public class OrderListItem
     {
-        public int OrderId { get; set; }
+        public Guid OrderId { get; set; }
         public Guid UserId { get; set; }
         public int Quantity { get; set; }
         public int DrinkId { get; set; }

@@ -15,7 +15,7 @@ namespace Tipsy.Data
         [Required]
         public string DrinkName { get; set; }
         [Required]
-        public decimal Price { get; set; }
+        public float Price { get; set; }
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
