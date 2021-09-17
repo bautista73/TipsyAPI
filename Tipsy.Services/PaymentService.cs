@@ -50,7 +50,10 @@ namespace Tipsy.Services
                                 {
                                     PaymentId = e.PaymentId,
                                     OrderId = e.OrderId,
-                                    CreatedUtc = e.CreatedUtc
+                                    CreatedUtc = e.CreatedUtc,
+                                    Amount = e.Amount,
+                                    PaymentDate = e.PaymentDate,
+                                    UserId = e.UserId
                                 }
                         );
                 return query.ToArray();
@@ -64,7 +67,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Payments
-                        .Single(e => e.PaymentId == id && e.UserId == _userId);
+                        .Single(e => e.PaymentId == id);
                 return
                     new PaymentDetail
                     {
@@ -86,10 +89,11 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Payments
-                        .Single(e => e.PaymentId == model.PaymentId && e.UserId == _userId);
-                entity.PaymentId = model.PaymentId;
-                entity.Amount = model.Amount;
-                entity.PaymentType = model.PaymentType;
+                        .Single(e => e.PaymentId == model.PaymentId);
+
+                            entity.PaymentId = model.PaymentId;
+                            entity.Amount = model.Amount;
+                            entity.PaymentType = model.PaymentType;
 
                 return ctx.SaveChanges() == 1;
             }
@@ -102,7 +106,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Payments
-                        .Single(e => e.PaymentId == paymentId && e.UserId == _userId);
+                        .Single(e => e.PaymentId == paymentId);
                 ctx.Payments.Remove(entity);
 
                 return ctx.SaveChanges() == 1;

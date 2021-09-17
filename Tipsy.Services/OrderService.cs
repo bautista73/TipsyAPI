@@ -17,7 +17,6 @@ namespace Tipsy.Services
             _userId = userId;
         }
 
-        //Create Method
         public bool CreateOrder(OrderCreate model)
         {
             var entity =
@@ -35,7 +34,6 @@ namespace Tipsy.Services
             }
         }
 
-        //Read Method
         public IEnumerable<OrderListItem> GetOrders()
         {
             using (var ctx = new ApplicationDbContext())
@@ -59,14 +57,14 @@ namespace Tipsy.Services
             }
         }
 
-        public OrderDetail GetOrderById(int id)
+        public OrderDetail GetOrderById(Guid id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                         .Orders
-                        .Single(e => e.OrderId == id && e.UserId == _userId);
+                        .Single(e => e.OrderId == id);
                 return
                     new OrderDetail
                     {
@@ -86,7 +84,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Orders
-                        .Single(e => e.OrderId == model.OrderId && e.UserId == _userId);
+                        .Single(e => e.OrderId == model.OrderId);
 
                 entity.Quantity = model.Quantity;
                 entity.DrinkId = model.DrinkId;
@@ -96,14 +94,14 @@ namespace Tipsy.Services
             }
         }
 
-        public bool DeleteOrder(int orderId)
+        public bool DeleteOrder(Guid orderId)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                         .Orders
-                        .Single(e => e.OrderId == orderId && e.UserId == _userId);
+                        .Single(e => e.OrderId == orderId);
 
                 ctx.Orders.Remove(entity);
 

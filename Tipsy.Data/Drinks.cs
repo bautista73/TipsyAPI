@@ -12,10 +12,16 @@ namespace Tipsy.Data
     {
         [Key]
         public int DrinkId { get; set; }
+
+        [Required]
+        public Guid UserId { get; set; }
+
         [Required]
         public string DrinkName { get; set; }
+
         [Required]
         public float Price { get; set; }
+
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }

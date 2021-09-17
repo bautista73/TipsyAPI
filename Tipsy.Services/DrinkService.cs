@@ -10,9 +10,9 @@ namespace Tipsy.Services
 {
     public class DrinkService
     {
-        private readonly int _userId;
+        private readonly Guid _userId;
 
-        public DrinkService(int userId)
+        public DrinkService(Guid userId)
         {
             _userId = userId;
         }
@@ -22,10 +22,10 @@ namespace Tipsy.Services
             var entity =
                 new Drinks()
                 {
-                    DrinkId = _userId,
+                    UserId = _userId,
                     DrinkName = model.DrinkName,
                     Price = model.Price,
-                    Ingredients = model.Ingredients
+                    CreatedUtc = DateTimeOffset.Now
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -41,7 +41,7 @@ namespace Tipsy.Services
                 var query =
                     ctx
                         .Drink
-                        .Where(e => e.DrinkId == _userId)
+                        .Where(e => e.UserId == _userId)
                         .Select(
                             e =>
                                 new DrinksListItem
@@ -62,7 +62,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == id && e.DrinkId == _userId);
+                        .Single(e => e.DrinkId == id);
                 return
                     new DrinksDetail
                     {
@@ -82,10 +82,9 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == model.DrinkId && e.DrinkId == _userId);
+                        .Single(e => e.DrinkId == model.DrinkId);
                 entity.DrinkName = model.DrinkName;
                 entity.Price = model.Price;
-                entity.Ingredients = model.Ingredients;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;
@@ -99,7 +98,7 @@ namespace Tipsy.Services
                 var entity =
                     ctx
                         .Drink
-                        .Single(e => e.DrinkId == drinkId && e.DrinkId == _userId);
+                        .Single(e => e.DrinkId == drinkId);
 
                 ctx.Drink.Remove(entity);
 
