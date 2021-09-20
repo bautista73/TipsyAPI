@@ -22,7 +22,7 @@ namespace Tipsy.Models.PaymentModels
         public DateTime PaymentDate { get; set; }
 
         [Required]
-        public Guid OrderId { get; set; }
+        public int OrderId { get; set; }
 
         [Required]
         [Display(Name = "Created")]
