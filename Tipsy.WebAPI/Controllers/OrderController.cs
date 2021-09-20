@@ -40,7 +40,7 @@ namespace Tipsy.WebAPI.Controllers
             return Ok(orders);
         }
 
-        public IHttpActionResult Get(Guid id)
+        public IHttpActionResult Get(int id)
         {
             OrderService orderService = CreateOrderService();
             var order = orderService.GetOrderById(id);
@@ -57,7 +57,7 @@ namespace Tipsy.WebAPI.Controllers
             return Ok();
         }
 
-        public IHttpActionResult Delete(Guid id)
+        public IHttpActionResult Delete(int id)
         {
             var service = CreateOrderService();
 

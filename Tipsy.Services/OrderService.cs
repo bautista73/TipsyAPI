@@ -57,7 +57,7 @@ namespace Tipsy.Services
             }
         }
 
-        public OrderDetail GetOrderById(Guid id)
+        public OrderDetail GetOrderById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -94,7 +94,7 @@ namespace Tipsy.Services
             }
         }
 
-        public bool DeleteOrder(Guid orderId)
+        public bool DeleteOrder(int orderId)
         {
             using (var ctx = new ApplicationDbContext())
             {

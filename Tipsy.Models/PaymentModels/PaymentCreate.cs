@@ -11,7 +11,7 @@ namespace Tipsy.Models.PaymentModels
     public class PaymentCreate
     {
         [Required]
-        public Guid OrderId { get; set; }
+        public int OrderId { get; set; }
 
         [Required]
         public Guid UserId { get; set; }

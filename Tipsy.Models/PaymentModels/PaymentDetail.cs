@@ -13,7 +13,7 @@ namespace Tipsy.Models.PaymentModels
         [Required]
         public int PaymentId { get; set; }
         [Required]
-        public Guid OrderId { get; set; }
+        public int OrderId { get; set; }
         [Required]
         public DateTime PaymentDate { get; set; }
         [Required]
