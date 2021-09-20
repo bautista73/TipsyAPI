@@ -14,7 +14,7 @@ namespace Tipsy.Data
         public int PaymentId { get; set; }
         [Required]
         public Guid UserId { get; set; }
-        public DateTime PaymentDate { get; set; }
+        public DateTimeOffset PaymentDate { get; set; }
         [Required]
         public float Amount { get; set; }
         [Required]

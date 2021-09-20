@@ -10,7 +10,7 @@ namespace Tipsy.Models
 {
     public class OrderCreate
     { 
-        [MaxLength(100)]
+        
         public int Quantity { get; set; }
         public int DrinkId { get; set; }
     }

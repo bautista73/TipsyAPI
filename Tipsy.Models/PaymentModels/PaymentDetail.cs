@@ -15,12 +15,12 @@ namespace Tipsy.Models.PaymentModels
         [Required]
         public int OrderId { get; set; }
         [Required]
-        public DateTime PaymentDate { get; set; }
-        [Required]
+        public DateTimeOffset PaymentDate { get; set; }
+        
         public float Amount { get; set; }
         [Required]
         public PayType PaymentType { get; set; }
-        [Required]
+        
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
     }

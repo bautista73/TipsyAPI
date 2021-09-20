@@ -16,10 +16,10 @@ namespace Tipsy.Models.PaymentModels
         [Required]
         public Guid UserId { get; set; }
 
-        [Required]
-        public DateTime PaymentDate { get; set; }
+        
+        public DateTimeOffset PaymentDate { get; set; }
 
-        [Required]
+        
         public float Amount { get; set; }
 
         [Required]
