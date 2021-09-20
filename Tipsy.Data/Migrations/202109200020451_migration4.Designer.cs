@@ -7,13 +7,13 @@ namespace Tipsy.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Migration3 : IMigrationMetadata
+    public sealed partial class migration4 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Migration3));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(migration4));
         
         string IMigrationMetadata.Id
         {
-            get { return "202109170334576_Migration3"; }
+            get { return "202109200020451_migration4"; }
         }
         
         string IMigrationMetadata.Source

@@ -80,17 +80,9 @@
   <ItemGroup>
     <Compile Include="Drinks.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202108281636467_Initial.cs" />
-    <Compile Include="Migrations\202108281636467_Initial.designer.cs">
-      <DependentUpon>202108281636467_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109170057401_migration2.cs" />
-    <Compile Include="Migrations\202109170057401_migration2.designer.cs">
-      <DependentUpon>202109170057401_migration2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109170334576_Migration3.cs" />
-    <Compile Include="Migrations\202109170334576_Migration3.designer.cs">
-      <DependentUpon>202109170334576_Migration3.cs</DependentUpon>
+    <Compile Include="Migrations\202109200020451_migration4.cs" />
+    <Compile Include="Migrations\202109200020451_migration4.designer.cs">
+      <DependentUpon>202109200020451_migration4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Order.cs" />
@@ -102,14 +94,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202108281636467_Initial.resx">
-      <DependentUpon>202108281636467_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109170057401_migration2.resx">
-      <DependentUpon>202109170057401_migration2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109170334576_Migration3.resx">
-      <DependentUpon>202109170334576_Migration3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109200020451_migration4.resx">
+      <DependentUpon>202109200020451_migration4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
