@@ -84,6 +84,10 @@
     <Compile Include="Migrations\202109200020451_migration4.designer.cs">
       <DependentUpon>202109200020451_migration4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109202202465_migration5.cs" />
+    <Compile Include="Migrations\202109202202465_migration5.designer.cs">
+      <DependentUpon>202109202202465_migration5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Payment.cs" />
@@ -96,6 +100,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202109200020451_migration4.resx">
       <DependentUpon>202109200020451_migration4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109202202465_migration5.resx">
+      <DependentUpon>202109202202465_migration5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
