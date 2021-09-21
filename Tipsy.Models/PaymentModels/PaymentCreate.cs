@@ -15,10 +15,8 @@ namespace Tipsy.Models.PaymentModels
 
         [Required]
         public Guid UserId { get; set; }
-
         
         public DateTimeOffset PaymentDate { get; set; }
-
         
         public float Amount { get; set; }
 
