@@ -48,6 +48,7 @@ namespace Tipsy.Services
                                 {
                                     DrinkId = e.DrinkId,
                                     DrinkName = e.DrinkName,
+                                    Price = e.Price,
                                     CreatedUtc = e.CreatedUtc
                                 }
                         );
