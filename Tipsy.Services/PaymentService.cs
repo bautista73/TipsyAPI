@@ -24,7 +24,6 @@ namespace Tipsy.Services
                 new Payment()
                 {
                     UserId = _userId,
-                    OrderId = model.OrderId,
                     PaymentDate = model.PaymentDate,
                     Amount = model.Amount,
                     PaymentType = model.PaymentType,
