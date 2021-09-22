@@ -1,4 +1,4 @@
-# TipsyAPI --- API for bars and restaurants
+# TipsyAPI - API for bars and restaurants
 
 - What it is:  
     - TipsyAPI is a simple web application created for restaurants and bars to take drink orders without having to interact with the customer.  
