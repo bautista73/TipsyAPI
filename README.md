@@ -3,10 +3,10 @@
 - What it is:  
     - TipsyAPI is a simple web application created for restaurants and bars to take drink orders without having to interact with the customer.  
     - This efficinet process saves time and the headache of yelling over others at the bar to explain to the bar tender what you want to drink.
-- What it does
+- What it does:
     - TipsyAPI allows users to browse drinks, create an order with their drink, and create a payment to finish their order.
     - Currently, only one drink may be added to an order at a time.
-- Endpoints
+- Endpoints:
 
   Drinks
   - Get all Drinks:  GET https://localhost:44340/api/Drinks
